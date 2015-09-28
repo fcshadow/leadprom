@@ -1,0 +1,8 @@
+{
+  "revision":"187",
+  "api":"/api",
+  "editor":"https://demo3-us-xenon.graebert.com/editor?server=https://editor-eu-xenon.graebert.com&file=",
+  "debug":true,
+  "requests":"ajax",
+  "viewtype":"table"
+}

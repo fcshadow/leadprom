@@ -1,0 +1,48 @@
+{
+  "name": "AresKudo",
+  "version": "0.1.1",
+  "description": "Ares Kudo by Graebert GMBH",
+  "dependencies": {
+    "flux": "^2.0.1",
+    "keymirror": "~0.1.0",
+    "object-assign": "^1.0.0",
+    "react": "0.13.3",
+    "react-bootstrap": "0.24.3",
+    "jquery": "latest",
+    "underscore": "latest",
+    "md5": "latest",
+    "gulp-uglify": "latest"
+  },
+  "devDependencies": {
+    "browserify": "11.0.1",
+    "envify": "3.4.0",
+    "jest-cli": "0.5.0",
+    "reactify": "1.1.1",
+    "uglify-js": "latest",
+    "watchify": "latest",
+    "gulp": "latest",
+    "vinyl-source-stream": "latest",
+    "vinyl-buffer": "latest",
+    "yargs": "latest",
+    "fs": "latest"
+  },
+  "scripts": {
+    "build": "gulp build",
+    "browserify": "gulp browserify",
+    "compress": "gulp compress",
+    "minify": "uglifyjs --compress --mangle -- ./dist/loginBundle.js > ./dist/loginBundle.min.js",
+    "files": "gulp build_files",
+    "test": "jest",
+    "preInstall": "gulp"
+  },
+  "author": "Dmitrii Khizhniakov",
+  "browserify": {
+    "transform": [
+      "reactify",
+      "envify"
+    ]
+  },
+  "jest": {
+    "rootDir": "./js"
+  }
+}

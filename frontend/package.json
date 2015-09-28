@@ -1,0 +1,48 @@
+{
+  "name": "fluorine",
+  "version": "0.1.1",
+  "description": "fluorine UI for Xenon project by Graebert GMBH",
+  "dependencies": {
+    "cookie": "latest",
+    "flux": "^2.0.1",
+    "jquery": "latest",
+    "keymirror": "~0.1.0",
+    "md5": "^2.0.0",
+    "object-assign": "^1.0.0",
+    "react": "^0.13.0",
+    "react-bootstrap": "latest",
+    "underscore": "latest",
+    "yargs": "latest"
+  },
+  "devDependencies": {
+    "browserify": "^6.2.0",
+    "envify": "^3.0.0",
+    "fs": "latest",
+    "gulp": "^3.9.0",
+    "gulp-webserver": "^0.9.0",
+    "jest-cli": "~0.1.17",
+    "opn": "^1.0.2",
+    "react-autocomplete": "latest",
+    "reactify": "^0.15.2",
+    "uglify-js": "~2.4.15",
+    "vinyl-source-stream": "latest",
+    "watchify": "latest",
+    "yargs": "latest"
+  },
+  "scripts": {
+    "build": "gulp browserify",
+    "test": "jest",
+    "preInstall": "gulp",
+    "oneb": "gulp build --list files"
+  },
+  "author": "Graebert GmbH",
+  "browserify": {
+    "transform": [
+      "reactify",
+      "envify"
+    ]
+  },
+  "jest": {
+    "rootDir": "./js"
+  }
+}
